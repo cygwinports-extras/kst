@@ -1,0 +1,11 @@
+--- origsrc/kst-2.0.4/src/kst/kst2.desktop	2011-09-12 10:34:28.000000000 -0500
++++ src/kst-2.0.4/src/kst/kst2.desktop	2011-10-18 21:16:36.998822900 -0500
+@@ -4,7 +4,7 @@ Exec=kst2
+ Icon=kst
+ DocPath=kst2/index.html
+ MimeType=application/x-kst;
+-Categories=Qt;KDE;Science;
++Categories=Qt;KDE;Education;Science;
+ Name=Kst2
+ Name[hi]=केएसटी
+ Name[ta]=கேஎஸ்டி

@@ -1,0 +1,11 @@
+--- origsrc/kst-2.0.4/cmake/modules/KstMacros.cmake	2011-09-12 10:34:28.000000000 -0500
++++ src/kst-2.0.4/cmake/modules/KstMacros.cmake	2011-10-18 21:07:32.043072800 -0500
+@@ -120,7 +120,7 @@ macro(kst_add_library type)
+ 	set_property(TARGET ${kst_name} PROPERTY DEBUG_POSTFIX ${kst_debug_postfix})
+ 	set_target_properties(${kst_name} PROPERTIES VERSION ${kst_version} SOVERSION ${kst_version_major})
+ 	kst_revision_add_dependency()
+-	if(WIN32)
++	if(WIN32 OR CYGWIN)
+ 		if(NOT ${type} STREQUAL "STATIC")
+ 			install(TARGETS ${kst_name} RUNTIME DESTINATION bin)
+ 		endif()

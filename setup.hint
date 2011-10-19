@@ -1,0 +1,5 @@
+category: KDE Math
+requires: gsl libcfitsio3 libgcc1 libgetdata++2 libnetcdf6 libQtCore4 libQtGui4 libQtOpenGL4 libQtSvg4 libQtXml4 libstdc++6
+sdesc: "Qt data plotting tool"
+ldesc: "Kst is a fast, user-friendly real-time large-dataset viewing and 
+plotting tool with built-in data analysis functionality."
