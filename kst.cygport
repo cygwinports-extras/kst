@@ -1,0 +1,18 @@
+inherit qt4-cmake
+
+NAME="kst"
+VERSION=2.0.6
+RELEASE=1
+CATEGORY="KDE Math"
+SUMMARY="Qt data plotting tool"
+DESCRIPTION="Kst is a fast, user-friendly real-time large-dataset viewing and
+plotting tool with built-in data analysis functionality."
+HOMEPAGE="http://kst-plot.kde.org/"
+SRC_URI="mirror://sourceforge/kst/${P}.tar.gz"
+PATCH_URI="2.0.4-cygwin-install.patch"
+
+src_compile() {
+	cd ${B}
+	CYGCMAKE_SOURCE="${S}/cmake"
+	qt4_cmake_compile -Dkst_install_prefix=/usr
+}
